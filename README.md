@@ -1,2 +1,3 @@
-# y-mei.github.io
-DivHacks 2017
+# DivHacks 2017
+
+Copied from johnanukem.github.io
