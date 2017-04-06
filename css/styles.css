@@ -45,7 +45,6 @@ body {
   font-size: 0.875rem;
   line-height: 22px;
   line-height: 1.375rem;
-  color: #828282;
   font-weight: 400;
   background: #fff; }
 
@@ -62,9 +61,24 @@ a {
     outline-width: 0;
     text-decoration: none; }
 
+.sub-header {
+  font-size: 20px;
+  color: white;
+}
+
+#columbia-header {
+  letter-spacing: 8.5px;
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 30px;
+  color:black;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   margin: 0; }
+
 
 h1, .fs-1 {
   font-size: 32px;
@@ -75,6 +89,7 @@ h1, .fs-1 {
 h2, .fs-2 {
   font-size: 26px;
   font-size: 1.625rem;
+  color: black;
   line-height: 34px;
   line-height: 2.125rem; }
 
@@ -408,7 +423,7 @@ html input[disabled] {
 .button {
   cursor: pointer;
   border: 1px solid #d7d7d7;
-  background-color: #f3f3f3;
+  background-color:  #00394d;
   line-height: normal;
   padding: 10px 20px;
   text-decoration: none;
@@ -820,6 +835,8 @@ html input[disabled] {
   .col-11-m {
     width: 91.66667%; }
   .col-12-m {
+    margin-left:30px;
+    margin-right:50px;
     width: 100%; }
   .col-1-2-m {
     width: 50%; }
@@ -1499,7 +1516,7 @@ a {
 
 .button {
   border: 0;
-  background-color: #525b64;
+  background-color: #ff8080;
   line-height: normal;
   padding: 12px 26px;
   text-decoration: none;
@@ -1538,7 +1555,9 @@ a {
     outline: 0; }
 
 .h-white, .banner-heading {
-  color: #fff; }
+  color: black;
+  font-weight: 100;
+}
 
 .h-grey {
   color: #828282; }
@@ -1834,10 +1853,11 @@ input.field {
   background-color: #ececec; }
 
 .logo {
-  color: white;
-  font-size: 400%;
+  font-size: 500%;
+  color: black;
   margin: 0;
   margin-left: auto;
+  margin-bottom:15px;
   margin-right: auto; }
   .logo > svg {
     display: inline-block;
@@ -1849,13 +1869,15 @@ input.field {
     transition: all .5s; }
 
 .banner {
-  background: url(../img/banner.jpg) 50% 50% no-repeat;
+  background-color: #0099cc;
+  background: url(../img/nyc_skyline.jpg) 50% 50% no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff; }
 
 .banner-heading {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   margin: .7em 0; }
 
 #discover-button {
@@ -1873,20 +1895,67 @@ input.field {
         display: inline-block;
         margin: 0 10px; } }
 
-#mission {
+.speaker-section {
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 550px;
+  width:100%;
+}
 
- 
-  
+.speaker-section-container{
+  display:flex;
+  flex-direction: column;
+}
+
+.speaker-faq{
+  display:flex;
+  flex-direction:row;
+}
+
+.faq-box {
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 
-#openingMission {
+.question{
+  color: #80bfff;
+  margin-bottom:10px;
 
+}
+
+.answer {
+  color: #000000;
+  margin-top:10px;
+
+}
+.speaker-bio-box {
+  display: flex;
+  flex-direction:row;
+}
+
+.speaker-bio{
+  margin-top:20px;
+  width: 300px;
+  height: 400px;
+}
+
+.speaker-container{
+  margin-top:20px;
+  width: 350px;
+  height:350px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+#openingMission {
+  height: 350px;
   text-align: center;
 }
 
 .under-discover {
-  margin-top: 40px; 
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1895,7 +1964,7 @@ input.field {
   }
   .under-discover .button {
     display: flex;
-    justify-content: 
+    justify-content:
     margin-top: 10px; }
     @media only screen and (min-width: 740px) {
       .under-discover .button {
@@ -1996,7 +2065,31 @@ input.field {
   top: 35px;
   left: 130px; }
 
+.company-section {
+  width: 100px;
+  height: 40px;
+}
+
+.breakout-session-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom:60px;
+}
+
+.bottom-section {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.company-image {
+  width:230px;
+  height: 50px;
+}
+
 .event-speakers {
+  display:flex;
+  justify-content:center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -2147,7 +2240,23 @@ input.field {
   @media only screen and (min-width: 980px) {
     .sponsor {
       margin-bottom: 0; } }
+.sponsor-box {
+  display:flex;
+  justify-content: center;
+  flex-direction:row;
+  flex-wrap: wrap;
+  width: 100%;
 
+}
+.sponsor-container{
+ width: 400px;
+ margin-left: 30px;
+ margin-rigth: 30px;
+ margin-bottom:30px;
+ margin-top:30px;
+ height:100px;
+
+}
 .sponsor-facebook {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4wIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxNjBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgMTYwIDQwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNjAgNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGcgaWQ9Imc4Ij4NCgk8cGF0aCBpZD0icGF0aDEwIiBmaWxsPSIjODI4MjgyIiBkPSJNODEuOCwxOS41Yy0xLjMsMC0yLjEsMC40LTMuMSwwLjl2OS40YzAuOSwwLjEsMS40LDAuMSwyLjIsMC4xYzMsMCwzLjQtMS40LDMuNC0zLjJ2LTQuNQ0KCQlDODQuMywyMC42LDgzLjksMTkuNSw4MS44LDE5LjV6IE02MS45LDE5Yy0yLjEsMC0yLjYsMS4xLTIuNiwyLjZ2MC44aDUuMXYtMC44QzY0LjQsMjAuMSw2NCwxOSw2MS45LDE5eiBNMjMuNCwyOC44DQoJCWMwLDEuMSwwLjUsMS43LDEuNywxLjdjMS4zLDAsMi0wLjQsMi45LTAuOXYtMi4yaC0yLjdDMjMuOSwyNy41LDIzLjQsMjcuNywyMy40LDI4Ljh6IE0xMDEuMiwxOS41Yy0yLjEsMC0yLjgsMS4xLTIuOCwyLjZ2NS4xDQoJCWMwLDEuNSwwLjcsMi42LDIuOCwyLjZjMi4xLDAsMi44LTEuMSwyLjgtMi42di01LjFDMTA0LDIwLjYsMTAzLjIsMTkuNSwxMDEuMiwxOS41eiBNMTMuMSwzNC42SDcuMVYxOS44SDR2LTUuMWgzLjF2LTMuMQ0KCQljMC00LjIsMS43LTYuNyw2LjctNi43aDQuMVYxMGgtMi42Yy0xLjksMC0yLjEsMC43LTIuMSwyLjF2Mi42aDQuNmwtMC41LDUuMWgtNC4xTDEzLjEsMzQuNkwxMy4xLDM0LjZ6IE0zNC4xLDM0LjZIMjlsLTAuMi0xLjMNCgkJYy0yLjMsMS4zLTQuNCwxLjUtNS44LDEuNWMtMy44LDAtNS43LTIuNS01LjctNmMwLTQuMSwyLjMtNS42LDYuNS01LjZoNC4ydi0wLjljMC0yLjEtMC4zLTIuNi0zLjQtMi42aC01LjJsMC41LTUuMWg1LjcNCgkJYzcsMCw4LjUsMi4yLDguNSw3LjlWMzQuNnogTTUxLjQsMjAuMmMtMy4yLTAuNS00LjEtMC43LTUuNi0wLjdjLTIuNywwLTMuNiwwLjYtMy42LDIuOXY0LjRjMCwyLjMsMC45LDIuOSwzLjYsMi45DQoJCWMxLjUsMCwyLjUtMC4xLDUuNi0wLjd2NWMtMi44LDAuNi00LjYsMC44LTYuMiwwLjhjLTYuNiwwLTkuMS0zLjQtOS4xLTguNXYtMy42YzAtNSwyLjYtOC41LDkuMS04LjVjMS41LDAsMy4zLDAuMiw2LjIsMC44VjIwLjJ6DQoJCSBNNzAuNiwyNi40SDU5LjR2MC40YzAsMi4zLDAuOSwyLjksMy42LDIuOWMyLjUsMCwzLjktMC4xLDcuMi0wLjd2NWMtMy4xLDAuNi00LjYsMC44LTcuNiwwLjhjLTYuNiwwLTkuMS0zLjQtOS4xLTguNXYtNC4xDQoJCWMwLTQuNCwyLTcuOSw4LjYtNy45czguNiwzLjUsOC42LDcuOUw3MC42LDI2LjRMNzAuNiwyNi40eiBNOTAuNSwyNi41YzAsNC44LTEuNCw4LjQtOS43LDguNGMtMywwLTQuOC0wLjMtOC4xLTAuOFY2LjVsNi4yLTF2OS43DQoJCWMxLjMtMC41LDMtMC44LDQuNS0wLjhjNi4yLDAsNy4yLDIuNyw3LjIsNy4yQzkwLjUsMjEuNiw5MC41LDI2LjUsOTAuNSwyNi41eiBNMTEwLjEsMjYuNmMwLDQuMi0xLjcsOC4yLTguOSw4LjJzLTktNC05LTguMnYtNA0KCQljMC00LjIsMS43LTguMiw5LTguMmM3LjIsMCw4LjksNCw4LjksOC4yVjI2LjZ6IE0xMjkuNywyNi42YzAsNC4yLTEuNyw4LjItOC45LDguMmMtNy4yLDAtOS00LTktOC4ydi00YzAtNC4yLDEuNy04LjIsOS04LjINCgkJYzcuMiwwLDguOSw0LDguOSw4LjJWMjYuNnogTTE0OS44LDM0LjZoLTYuN2wtNS42LTkuNHY5LjRoLTYuMlY2LjVsNi4yLTF2MTguMWw1LjYtOC45aDYuN2wtNi4yLDkuN0wxNDkuOCwzNC42eiBNMTIwLjgsMTkuNQ0KCQljLTIuMSwwLTIuOCwxLjEtMi44LDIuNnY1LjFjMCwxLjUsMC43LDIuNiwyLjgsMi42YzIuMSwwLDIuOC0xLjEsMi44LTIuNnYtNS4xQzEyMy42LDIwLjYsMTIyLjgsMTkuNSwxMjAuOCwxOS41eiIvPg0KCTxwYXRoIGlkPSJwYXRoMTIiIGZpbGw9IiM4MjgyODIiIGQ9Ik0xNTMuMywzMS4xYzEsMCwxLjksMC45LDEuOSwxLjlzLTAuOSwxLjktMS45LDEuOWMtMSwwLTEuOS0wLjktMS45LTEuOVMxNTIuMywzMS4xLDE1My4zLDMxLjENCgkJTDE1My4zLDMxLjF6IE0xNTMuMywzMS40Yy0wLjksMC0xLjUsMC43LTEuNSwxLjZjMCwwLjksMC43LDEuNiwxLjUsMS42YzAuOSwwLDEuNS0wLjcsMS41LTEuNkMxNTQuOSwzMi4xLDE1NC4yLDMxLjQsMTUzLjMsMzEuNA0KCQlMMTUzLjMsMzEuNHogTTE1MywzNC4xaC0wLjNWMzJjMC4yLDAsMC4zLTAuMSwwLjYtMC4xYzAuMywwLDAuNSwwLjEsMC43LDAuMmMwLjEsMC4xLDAuMiwwLjMsMC4yLDAuNGMwLDAuMy0wLjIsMC40LTAuNCwwLjVsMCwwDQoJCWMwLjIsMCwwLjMsMC4yLDAuMywwLjVjMC4xLDAuMywwLjEsMC40LDAuMiwwLjVoLTAuM2MtMC4xLTAuMS0wLjEtMC4zLTAuMi0wLjVzLTAuMi0wLjMtMC40LTAuM0gxNTNWMzQuMXogTTE1MywzMi45aDAuMw0KCQljMC4zLDAsMC41LTAuMSwwLjUtMC4zYzAtMC4yLTAuMi0wLjMtMC41LTAuM2MtMC4xLDAtMC4yLDAtMC4zLDBWMzIuOXoiLz4NCjwvZz4NCjwvc3ZnPg0K); }
   .sponsor-facebook:hover {
@@ -2234,7 +2343,8 @@ input.field {
     bottom: 2em;
     margin-left: -560px; } }
 
-.footer {
+
+ {
   color: #f3f3f3;
   background: #525b64; }
 
@@ -2266,6 +2376,7 @@ input.field {
   line-height: 20px;
   line-height: 1.25rem;
   color: #ccc;
+  height:40px;
   background: #3f464c;
   padding-top: .8em;
   padding-bottom: .8em; }
