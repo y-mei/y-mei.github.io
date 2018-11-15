@@ -1,3 +1,3 @@
 # DivHacks 2017
 
-Copied from johnanukem.github.io
+The next iteration of the hackathon: https://cu-divhacks.github.io/
